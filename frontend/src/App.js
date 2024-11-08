@@ -22,7 +22,7 @@ function CardUpload() {
     formData.append('file', selectedFile);
 
     try {
-      const { data } = await axios.post('https://imageprocess2.onrender.com/api/upload', formData, {
+      const { data } = await axios.post('https://imageprocess2.onrender.com/api/upload', formData, { 
         headers: {
           'Content-Type': 'multipart/form-data', // Ensure the content type is set correctly
         },
