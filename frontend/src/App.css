@@ -1,0 +1,116 @@
+/* CardUpload.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transform: scale(0.95); /* Slight zoom-out effect */
+}
+
+/* Container for the Card Upload Form */
+.card-upload-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.card-upload-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input file styling */
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Preview Image */
+.preview-container {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Loading message */
+p {
+  font-size: 16px;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Input read-only styling */
+input[readonly] {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+}
+
+/* Toast Container for Toastify */
+.Toastify__toast-container {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
